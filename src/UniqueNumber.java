@@ -52,7 +52,7 @@ public class UniqueNumber {
 
     /**
      * Displays the result
-     * @param x Signifies if number is unique or not.
+     * @param x Signifies number is unique or not.
      */
     void display(boolean x) {
 
