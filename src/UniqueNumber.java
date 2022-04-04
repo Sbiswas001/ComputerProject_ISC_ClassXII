@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 /**
  * Classname: UniqueNumber
  * This class enters a number from the user and displays if it is unique or not.
@@ -8,11 +9,12 @@ import java.util.Scanner;
  */
 public class UniqueNumber {
     private int[] number;                                //Stores digits of the number
+
     /**
      * Initializes instance variables
      */
     UniqueNumber() {
-        number = null;                                    //Initialising instance variable with default value
+        number = null;
     }
 
     /**
