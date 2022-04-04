@@ -46,19 +46,19 @@ public class NonBoundary {
      * two-dimensional array with the sorted non-boundary elements
      */
     void compute() {
-        int[] bound = new int[(r - 2) * (c - 2)];//Stores boundary elements
+        int[] nonBound = new int[(r - 2) * (c - 2)];//Stores boundary elements
         int k=0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
-                bound[k]=mat[i][j];//Stores boundary elements in a one dimensional array
+                nonBound[k]= mat[i][j];//Stores boundary elements in a one dimensional array
                 k++;
             }
         }
 
         System.out.println("The non-boundary elements are: ");
-        displayOneD(bound);
+        displayOneD(nonBound);
 
-        int[] x=sort(bound);//Sorted non-boundary elements
+        int[] x=sort(nonBound);//Sorted non-boundary elements
         k=0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
