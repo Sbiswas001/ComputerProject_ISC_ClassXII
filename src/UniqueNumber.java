@@ -9,7 +9,10 @@ import java.util.Scanner;
  */
 public class UniqueNumber {
 
-    private int[] number;//Stores digits of the number
+    /**
+     * number Stores digits of the number
+     */
+    private int[] number;
 
     /**
      * Initializes instance variables
@@ -40,7 +43,7 @@ public class UniqueNumber {
     /**
      * Checks if a number is unique or not.
      * @param digits The digit array to be checked.
-     * @return true or false
+     * @return boolean true or false
      */
     private boolean uniqueCheck(int[] digits) {
         for (int j = 0; j < digits.length; j++) {//Loops through the digits of the number; Variable j acts as the search term

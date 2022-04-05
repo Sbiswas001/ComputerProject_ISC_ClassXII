@@ -10,9 +10,14 @@ import java.util.Scanner;
  */
 public class NonBoundary {
 
-    private int[][] mat;//Stores matrix
-    int r;//Stores number of rows
-    int c;//Sores number of columns
+    /**
+     * mat Stores the matrix
+     * r Stores number of rows
+     * c Stores number of columns
+     */
+    private int[][] mat;
+    int r;
+    int c;
 
     /**
      * Initializes instance variables
