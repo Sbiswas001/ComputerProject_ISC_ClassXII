@@ -1,14 +1,15 @@
-import java.util.*;
+import java.util.Scanner;
 
 /**
  * Classname: NonBoundary
  * This class enters a matrix from the user, prints the non-boundary elements,
  * sorts them and prints the matrix with sorted non-boundary elements.
- * A number is unique if all of its digits are different.
+ * The non-boundary elements of a matrix are those not at extreme rows and columns.
  * @author Sayan Biswas
- * @version 02.04.2022
+ * @version 04.04.2022
  */
 public class NonBoundary {
+
     private int[][] mat;//Stores matrix
     int r;//Stores number of rows
     int c;//Sores number of columns
@@ -16,7 +17,7 @@ public class NonBoundary {
     /**
      * Initializes instance variables
      */
-    NonBoundary() {
+    private NonBoundary() {
         mat = null;
         r=0;
         c=0;
@@ -25,7 +26,7 @@ public class NonBoundary {
     /**
      * Inputs number of rows and columns of a matrix and the elements of the matrix
      */
-    void input() {
+    private void input() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the number of rows of the matrix: ");
         r = Integer.parseInt(sc.nextLine());
@@ -45,7 +46,7 @@ public class NonBoundary {
      * sorts the non-boundary elements, then replaces the non-boundary elements of the original
      * two-dimensional array with the sorted non-boundary elements
      */
-    void compute() {
+    private void compute() {
         int[] nonBound = new int[(r - 2) * (c - 2)];//Stores boundary elements
         int k=0;
         for(int i = 1; i < r-1; i++) {
@@ -73,7 +74,7 @@ public class NonBoundary {
      * @param a The array to a sorted
      * @return The sorted array
      */
-    int[] sort(int[] a) {
+    private int[] sort(int[] a) {
         int temp;
         for(int i=0;i<a.length;i++) {
             for(int j=0;j<a.length-i-1;j++) {
@@ -91,7 +92,7 @@ public class NonBoundary {
      * Prints a one-dimensional array
      * @param a The array to be printed
      */
-    void displayOneD(int[] a) {
+    private void displayOneD(int[] a) {
         for(int i = 0; i < a.length; i++) {
             System.out.print(a[i]+" ");
         }
@@ -102,7 +103,7 @@ public class NonBoundary {
      * Prints a two-dimensional array
      * @param a The array to be printed
      */
-    void displayTwoD(int[][] a) {
+    private void displayTwoD(int[][] a) {
         for(int i = 0; i < a.length; i++) {
             for(int j=0;j<a[0].length;j++) {
                 System.out.print(a[i][j]+" ");

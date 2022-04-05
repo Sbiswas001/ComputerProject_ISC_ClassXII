@@ -8,19 +8,20 @@ import java.util.Scanner;
  * @version 02.04.2022
  */
 public class UniqueNumber {
+
     private int[] number;                                //Stores digits of the number
 
     /**
      * Initializes instance variables
      */
-    UniqueNumber() {
+    private UniqueNumber() {
         number = null;
     }
 
     /**
      * Inputs a number from user and store the digits into an array
      */
-    void input() {
+    private void input() {
         String s;                                         //Variable to store the number
 
         Scanner sc = new Scanner(System.in);
@@ -41,7 +42,7 @@ public class UniqueNumber {
      * @param digits The digit array to be checked.
      * @return true or false
      */
-    boolean uniqueCheck(int[] digits) {
+    private boolean uniqueCheck(int[] digits) {
         for (int j = 0; j < digits.length; j++) {           //Loops through the digits of the number; Variable j acts as the search term
             for (int k = j + 1; k < digits.length; k++) {   //Loops through the digits of the number for each j
                 if (digits[j] == digits[k]) {               //Element at position k is checked for equality with element at position j
@@ -56,7 +57,7 @@ public class UniqueNumber {
      * Displays the result
      * @param x Signifies number is unique or not.
      */
-    void display(boolean x) {
+    private void display(boolean x) {
 
         System.out.println(x ? "Number is unique." : "Number is not unique.");
     }
