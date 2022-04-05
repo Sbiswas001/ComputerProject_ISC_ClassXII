@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class UniqueNumber {
 
-    private int[] number;                                //Stores digits of the number
+    private int[] number;//Stores digits of the number
 
     /**
      * Initializes instance variables
@@ -22,17 +22,17 @@ public class UniqueNumber {
      * Inputs a number from user and store the digits into an array
      */
     private void input() {
-        String s;                                         //Variable to store the number
+        String s;//Variable to store the number
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
-        if(!sc.hasNextInt()){                              //Deals with InputMismatchException
+        if(!sc.hasNextInt()){//Deals with InputMismatchException
             System.out.print("Wrong datatype; enter a number: ");
             input();
         }
         s = sc.nextLine();
         number = new int[s.length()];
-        for(int i = 0; i < s.length(); i++) {              //Loop to store the digits of the number in an array
+        for(int i = 0; i < s.length(); i++) {//Loop to store the digits of the number in an array
             number[i] = s.charAt(i);
         }
     }
@@ -43,9 +43,9 @@ public class UniqueNumber {
      * @return true or false
      */
     private boolean uniqueCheck(int[] digits) {
-        for (int j = 0; j < digits.length; j++) {           //Loops through the digits of the number; Variable j acts as the search term
-            for (int k = j + 1; k < digits.length; k++) {   //Loops through the digits of the number for each j
-                if (digits[j] == digits[k]) {               //Element at position k is checked for equality with element at position j
+        for (int j = 0; j < digits.length; j++) {//Loops through the digits of the number; Variable j acts as the search term
+            for (int k = j + 1; k < digits.length; k++) {//Loops through the digits of the number for each j
+                if (digits[j] == digits[k]) {//Element at position k is checked for equality with element at position j
                     return false;
                 }
             }

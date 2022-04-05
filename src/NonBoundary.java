@@ -19,8 +19,8 @@ public class NonBoundary {
      */
     private NonBoundary() {
         mat = null;
-        r=0;
-        c=0;
+        r = 0;
+        c = 0;
     }
 
     /**
@@ -36,7 +36,7 @@ public class NonBoundary {
         System.out.print("Enter the elements of the matrix: ");
         for(int i = 0; i < r; i++) {
             for(int j = 0; j < c; j++) {
-                mat[i][j]=Integer.parseInt(sc.next());
+                mat[i][j] = Integer.parseInt(sc.next());
             }
         }
     }
@@ -48,10 +48,10 @@ public class NonBoundary {
      */
     private void compute() {
         int[] nonBound = new int[(r - 2) * (c - 2)];//Stores boundary elements
-        int k=0;
+        int k = 0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
-                nonBound[k]= mat[i][j];//Stores boundary elements in a one dimensional array
+                nonBound[k] = mat[i][j];//Stores boundary elements in a one dimensional array
                 k++;
             }
         }
@@ -59,11 +59,11 @@ public class NonBoundary {
         System.out.println("The non-boundary elements are: ");
         displayOneD(nonBound);
 
-        int[] x=sort(nonBound);//Sorted non-boundary elements
-        k=0;
+        int[] x = sort(nonBound);//Sorted non-boundary elements
+        k = 0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
-                mat[i][j]=x[k];//Replaces the non-boundary elements of the original matrix
+                mat[i][j] = x[k];//Replaces the non-boundary elements of the original matrix
                 k++;
             }
         }
@@ -76,12 +76,12 @@ public class NonBoundary {
      */
     private int[] sort(int[] a) {
         int temp;
-        for(int i=0;i<a.length;i++) {
-            for(int j=0;j<a.length-i-1;j++) {
-                if(a[j]>a[j+1]) {//Swapping values
-                    temp=a[j];
-                    a[j]=a[j+1];
-                    a[j+1]=temp;
+        for(int i = 0; i < a.length; i++) {
+            for(int j = 0; j < a.length-i-1; j++) {
+                if(a[j] > a[j+1]) {//Swapping values
+                    temp = a[j];
+                    a[j] = a[j+1];
+                    a[j+1] = temp;
                 }
             }
         }
@@ -105,7 +105,7 @@ public class NonBoundary {
      */
     private void displayTwoD(int[][] a) {
         for(int i = 0; i < a.length; i++) {
-            for(int j=0;j<a[0].length;j++) {
+            for(int j = 0; j < a[0].length; j++) {
                 System.out.print(a[i][j]+" ");
             }
             System.out.println();

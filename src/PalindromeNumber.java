@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class PalindromeNumber {
 
-    private int x;                                  //Stores number
+    private int x;//Stores number
 
     /**
      * Initializes instance variables
