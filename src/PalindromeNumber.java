@@ -35,7 +35,7 @@ public class PalindromeNumber {
      * @param n Number to be checked
      * @return true or false
      */
-    private boolean palindrome_check(int n)
+    private boolean palindromeCheck(int n)
     {
         return n == reverse(n);
     }
@@ -72,6 +72,6 @@ public class PalindromeNumber {
     public static void main(String[] args) {
         PalindromeNumber ob = new PalindromeNumber();
         ob.input();
-        ob.display(ob.palindrome_check(ob.x));
+        ob.display(ob.palindromeCheck(ob.x));
     }
 }
