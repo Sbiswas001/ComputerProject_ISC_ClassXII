@@ -8,7 +8,7 @@ import java.util.Scanner;
  */
 public class AlphabeticalSentence {
     /**
-     * number Stores strings
+     * Stores strings
      */
     private String[] s;
 
