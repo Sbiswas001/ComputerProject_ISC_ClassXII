@@ -36,7 +36,8 @@ public class FibonacciSeries {
      */
     private void compute(int n) {
         int a1 = 0, a2 = 1, a3;
-        System.out.print(a1 + " " + a2);//First two terms
+        //Printing first two terms
+        System.out.print(a1 + " " + a2);
         for(int i = 2; i < n; ++i) {
             a3 = a1 + a2;
             System.out.print(" " + a3);

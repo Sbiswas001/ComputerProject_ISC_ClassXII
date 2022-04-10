@@ -41,10 +41,12 @@ public class Mobius {
         if(a==1) {
             return 1;
         }
-        int count = 0;//Counts number of prime factors
+        //Counts number of prime factors
+        int count = 0;
         for (int i = 1; i <= a; i++) {
             if (a % i == 0 && primeCheck(i)) {
-                if (a % (i * i) == 0) {//Checks if a has squared prime factor.
+                //Checks if a has squared prime factor.
+                if (a % (i * i) == 0) {
                     return 0;
                 }
                 else {

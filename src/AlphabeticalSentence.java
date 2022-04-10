@@ -25,7 +25,8 @@ public class AlphabeticalSentence {
     private void input() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of strings: ");
-        if(!sc.hasNextInt()){//Deals with InputMismatchException
+        //Deals with InputMismatchException
+        if(!sc.hasNextInt()){
             System.out.print("Wrong datatype; enter a number: ");
             input();
         }

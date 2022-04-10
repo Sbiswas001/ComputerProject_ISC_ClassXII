@@ -16,8 +16,8 @@ public class NonBoundary {
      * c Stores number of columns
      */
     private int[][] mat;
-    int r;
-    int c;
+    private int r;
+    private int c;
 
     /**
      * Initializes instance variables
@@ -52,11 +52,13 @@ public class NonBoundary {
      * two-dimensional array with the sorted non-boundary elements
      */
     private void compute() {
-        int[] nonBound = new int[(r - 2) * (c - 2)];//Stores boundary elements
+        //Stores non-boundary elements
+        int[] nonBound = new int[(r - 2) * (c - 2)];
         int k = 0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
-                nonBound[k] = mat[i][j];//Stores boundary elements in a one dimensional array
+                //Stores non-boundary elements in a one dimensional array
+                nonBound[k] = mat[i][j];
                 k++;
             }
         }
@@ -64,11 +66,13 @@ public class NonBoundary {
         System.out.println("The non-boundary elements are: ");
         displayOneD(nonBound);
 
-        int[] x = sort(nonBound);//Sorted non-boundary elements
+        //Sorted non-boundary elements
+        int[] x = sort(nonBound);
         k = 0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
-                mat[i][j] = x[k];//Replaces the non-boundary elements of the original matrix
+                //Replaces the non-boundary elements of the original matrix
+                mat[i][j] = x[k];
                 k++;
             }
         }
@@ -83,7 +87,8 @@ public class NonBoundary {
         int temp;
         for(int i = 0; i < a.length; i++) {
             for(int j = 0; j < a.length-i-1; j++) {
-                if(a[j] > a[j+1]) {//Swapping values
+                if(a[j] > a[j+1]) {
+                    //Swapping values
                     temp = a[j];
                     a[j] = a[j+1];
                     a[j+1] = temp;
