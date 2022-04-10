@@ -53,7 +53,7 @@ public class Matrix {
         System.out.print("Enter the number of columns of the matrix: ");
         n = Integer.parseInt(sc.nextLine());
         mat = new int[m][n];
-        System.out.print("Enter the elements of the matrix: ");
+        System.out.println("Enter the elements of the matrix: ");
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
                 mat[i][j] = Integer.parseInt(sc.next());
@@ -124,8 +124,8 @@ public class Matrix {
                 "The matrix is symmetric." : "The matrix is not symmetric.");
         ob.diagonalSum(ob.mat);
         System.out.println((ob.leftDiagonalSum == -1) ?
-                "The matrix is not a square matrix. Hence diagonals do not exist." :
-                "The sum of left diagonal elements is " + ob.leftDiagonalSum +
-                "The sum of right diagonal elements is " + ob.rightDiagonalSum);
+                "The matrix is not a square matrix. Hence, diagonals do not exist." :
+                "The sum of left diagonal elements is " + ob.leftDiagonalSum + ".\n" +
+                "The sum of right diagonal elements is " + ob.rightDiagonalSum + ".");
     }
 }

@@ -38,7 +38,7 @@ public class NonBoundary {
         System.out.print("Enter the number of columns of the matrix: ");
         c = Integer.parseInt(sc.nextLine());
         mat = new int[r][c];
-        System.out.print("Enter the elements of the matrix: ");
+        System.out.println("Enter the elements of the matrix: ");
         for(int i = 0; i < r; i++) {
             for(int j = 0; j < c; j++) {
                 mat[i][j] = Integer.parseInt(sc.next());
