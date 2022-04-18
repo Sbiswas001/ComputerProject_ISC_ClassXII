@@ -114,7 +114,9 @@ public class Matrix {
 
     /**
      * Calls other methods
+     * @param args Arguments passed to main method
      */
+
     public static void main(String[] args) {
         Matrix ob = new Matrix();
         ob.input();

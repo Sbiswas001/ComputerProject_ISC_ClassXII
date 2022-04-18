@@ -73,6 +73,7 @@ public class UniqueNumber {
 
     /**
      * Calls other methods
+     * @param args Arguments passed to main method
      */
     public static void main(String[] args) {
         UniqueNumber ob = new UniqueNumber();

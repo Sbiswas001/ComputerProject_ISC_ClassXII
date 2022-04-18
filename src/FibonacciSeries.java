@@ -48,6 +48,7 @@ public class FibonacciSeries {
 
     /**
      * Calls other methods
+     * @param args Arguments passed to main method
      */
     public static void main(String[] args) {
         FibonacciSeries ob = new FibonacciSeries();

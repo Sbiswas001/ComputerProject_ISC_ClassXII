@@ -78,6 +78,7 @@ public class Mobius {
 
     /**
      * Calls other methods
+     * @param args Arguments passed to main method
      */
     public static void main(String[] args) {
         Mobius ob = new Mobius();

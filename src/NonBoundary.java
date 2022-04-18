@@ -124,6 +124,7 @@ public class NonBoundary {
 
     /**
      * Calls other methods
+     * @param args Arguments passed to main method
      */
     public static void main(String[] args) {
         NonBoundary ob = new NonBoundary();
