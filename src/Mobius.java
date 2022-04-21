@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 public class Mobius {
     /**
-     * x Stores number
+     * Stores number
      */
     private int x;
 

@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class PalindromeNumber {
 
     /**
-     * x Stores number
+     * Stores number
      */
     private int x;
 

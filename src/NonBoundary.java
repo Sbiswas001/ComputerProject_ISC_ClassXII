@@ -11,12 +11,18 @@ import java.util.Scanner;
 public class NonBoundary {
 
     /**
-     * mat Stores the matrix
-     * r Stores number of rows
-     * c Stores number of columns
+     * Stores the matrix
      */
     private int[][] mat;
+
+    /**
+     * Stores number of rows
+     */
     private int r;
+
+    /**
+     * Stores number of columns
+     */
     private int c;
 
     /**
@@ -29,7 +35,8 @@ public class NonBoundary {
     }
 
     /**
-     * Inputs number of rows and columns of a matrix and the elements of the matrix
+     * Inputs number of rows and columns of a matrix
+     * and the elements of the matrix
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
@@ -47,8 +54,9 @@ public class NonBoundary {
     }
 
     /**
-     * Stores boundary elements in a one dimensional array, prints the non-boundary elements,
-     * sorts the non-boundary elements, then replaces the non-boundary elements of the original
+     * Stores boundary elements in a one dimensional array,
+     * prints the non-boundary elements, sorts the non-boundary elements,
+     * then replaces the non-boundary elements of the original
      * two-dimensional array with the sorted non-boundary elements
      */
     private void compute() {

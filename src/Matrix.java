@@ -5,7 +5,7 @@ import java.util.Scanner;
  * This class enters a two-dimensional matrix from the user
  * with number of rows between 2 and 10 and prints it.
  * It then checks if it is symmetric or not.
- * A square matrix is symmetric if * elements of the ith row
+ * A square matrix is symmetric if element of the ith row
  * and jth column is equal to the element of jth row and ith column.
  * It then prints the sum of the elements of the left diagonal
  * and sum of elements of right diagonal.
@@ -15,16 +15,28 @@ import java.util.Scanner;
 public class Matrix {
 
     /**
-     * mat Stores the matrix
-     * m Stores number of rows
-     * n Stores number of columns
-     * leftDiagonalSum Stores sum of left diagonal elements
-     * rightDiagonalSum Stores sum of right diagonal elements
+     * Stores the matrix
      */
     private int[][] mat;
+
+    /**
+     * Stores number of rows
+     */
     private int m;
+
+    /**
+     * Stores number of columns
+     */
     private int n;
+
+    /**
+     * Stores sum of left diagonal elements
+     */
     private int leftDiagonalSum;
+
+    /**
+     * Stores sum of right diagonal elements
+     */
     private int rightDiagonalSum;
 
     /**
@@ -63,7 +75,7 @@ public class Matrix {
 
     /**
      * Checks if a matrix is symmetric.
-     * A square matrix is symmetric if elements of the ith row
+     * A square matrix is symmetric if element of the ith row
      * and jth column is equal to the element of jth row and ith column.
      * @param a Matrix to be checked
      * @return true or false

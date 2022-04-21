@@ -14,14 +14,23 @@ import java.util.Scanner;
 public class Spiral {
 
     /**
-     * mat Stores the matrix
-     * spiral Stores elements in spiral order
-     * m Stores number of rows
-     * n Stores number of columns
+     * Stores the matrix
      */
     private int[][] mat;
+
+    /**
+     * Stores elements in spiral order
+     */
     private ArrayList<Integer> spiral;
+
+    /**
+     * Stores number of rows
+     */
     private int m;
+
+    /**
+     * Stores number of columns
+     */
     private int n;
 
     /**

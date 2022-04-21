@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class UniqueNumber {
 
     /**
-     * number Stores digits of the number
+     * Stores digits of the number
      */
     private int[] number;
 

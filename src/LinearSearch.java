@@ -9,13 +9,28 @@ import java.util.Scanner;
 public class LinearSearch {
 
     /**
-     * searchTermIndex Stores the index of search term
-     * searchTerm The term to be searched for
-     * arr Array to be searched
+     * Stores the index of search term
      */
     int searchTermIndex;
+
+    /**
+     * The term to be searched for
+     */
     int searchTerm;
+
+    /**
+     * Array to be searched
+     */
     int[] arr;
+
+    /**
+     * Initializes instance variables
+     */
+    private LinearSearch()  {
+        searchTermIndex = 0;
+        searchTerm = 0;
+        arr = null;
+    }
 
     /**
      * Inputs number of an array and search term.

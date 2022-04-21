@@ -10,7 +10,7 @@ import java.util.Scanner;
 public class FibonacciSeries {
 
     /**
-     * x Stores number of terms
+     * Stores number of terms
      */
     private int x;
 
