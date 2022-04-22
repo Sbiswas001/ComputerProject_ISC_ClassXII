@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: AlphabeticalSentence
  * This class enters multiple strings from user and arranges them in ascending order.
  * @author Sayan Biswas
  * @version 08.04.2022

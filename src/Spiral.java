@@ -2,7 +2,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * Classname: Spiral
  * This class enters a two-dimensional matrix from the user
  * and prints it. It then prints it in spiral order.
  * Spiral order means the elements are printed clockwise

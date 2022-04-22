@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: Mobius
  * This class enters a number from the user and displays the mobius function value.
  * The mobius function return 1, -1, 0 based on some conditions.
  * @author Sayan Biswas

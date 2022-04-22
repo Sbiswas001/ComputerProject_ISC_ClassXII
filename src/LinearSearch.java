@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: LinearSearch
  * This class checks if a term is in an array.
  * If found it displays appropriate message along
  * with index number of the term.

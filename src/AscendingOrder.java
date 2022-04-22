@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: AscendingOrder
  * This class inputs an array of integers
  * and sorts them in ascending order.
  */

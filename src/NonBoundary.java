@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: NonBoundary
  * This class enters a matrix from the user, prints the non-boundary elements,
  * sorts them and prints the matrix with sorted non-boundary elements.
  * The non-boundary elements of a matrix are those not at extreme rows and columns.

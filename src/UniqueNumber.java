@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: UniqueNumber
  * This class enters a number from the user and displays if it is unique or not.
  * A number is unique if all of its digits are different.
  * @author Sayan Biswas

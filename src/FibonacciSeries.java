@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: FibonacciSeries
  * This class prints n terms of the fibonacci series specified by user.
  * In fibonacci series, next number is the sum of previous two numbers.
  * @author Sayan Biswas

@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: Matrix
  * This class enters a two-dimensional matrix from the user
  * with number of rows between 2 and 10 and prints it.
  * It then checks if it is symmetric or not.

@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 /**
- * Classname: PalindromeNumber
  * This class enters a number from the user and displays if it is palindrome or not.
  * A number is palindrome if it is same when read from both sides.
  * @author Sayan Biswas
