@@ -45,6 +45,7 @@ public class AlphabeticalSentence {
      */
     private void compute(String[] a) {
         String temp;
+        //Bubble sort technique
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {
                 if (a[i].toUpperCase().compareTo(a[j].toUpperCase())>0) {

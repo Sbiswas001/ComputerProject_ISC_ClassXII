@@ -6,6 +6,8 @@ import java.util.Scanner;
 /**
  * This class returns the number of words in a sentence.
  * Words are separated by ' ' and ends with '.', '?' or '!'.
+ * @author Sayan Biswas
+ * @version 21.04.2022
  */
 public class WordCounter {
 

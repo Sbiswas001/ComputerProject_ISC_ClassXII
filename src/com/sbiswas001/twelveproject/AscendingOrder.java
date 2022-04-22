@@ -5,6 +5,8 @@ import java.util.Scanner;
 /**
  * This class inputs an array of integers
  * and sorts them in ascending order.
+ * @author Sayan Biswas
+ * @version 22.04.2022
  */
 public class AscendingOrder {
 

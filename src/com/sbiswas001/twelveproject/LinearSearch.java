@@ -6,6 +6,8 @@ import java.util.Scanner;
  * This class checks if a term is in an array.
  * If found it displays appropriate message along
  * with index number of the term.
+ * @author Sayan Biswas
+ * @version 20.04.2022
  */
 public class LinearSearch {
 

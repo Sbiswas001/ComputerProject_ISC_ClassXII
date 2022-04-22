@@ -6,6 +6,8 @@ import java.util.Scanner;
  * This class asks user to enter length and breadth
  * of a rectangle and displays a menu asking users to choose
  * among calculating perimeter, area or length of diagonal.
+ * @author Sayan Biswas
+ * @version 22.04.2022
  */
 public class Rectangle {
 
