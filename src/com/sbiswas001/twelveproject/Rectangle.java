@@ -48,6 +48,10 @@ public class Rectangle {
                 2. Area of rectangle
                 3. Length of Diagonal""");
         ch = Integer.parseInt(sc.next());
+        if(ch > 3 || ch < 1) {
+            System.out.println("Wrong input! Try again.");
+            input();
+        }
     }
 
     /**
@@ -56,13 +60,14 @@ public class Rectangle {
     private void menu() {
         switch (ch) {
             case 1:
-                System.out.println("Perimeter of rectangle is " + (2*(length + breadth)));
+                System.out.println("Perimeter of rectangle is " + (2*(length + breadth)) + " units");
                 break;
             case 2:
-                System.out.println("Area of rectangle is " + (length * breadth));
+                System.out.println("Area of rectangle is " + (length * breadth) + " square units");
                 break;
             case 3:
-                System.out.println("Length of Diagonal is " + Math.sqrt(length * breadth));
+                double d = Math.sqrt(Math.pow(length, 2) + Math.pow(breadth, 2));
+                System.out.println("Length of Diagonal is " + d + " units");
                 break;
         }
     }
