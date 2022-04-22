@@ -76,8 +76,4 @@ public class Rectangle {
         ob.input();
         ob.menu();
     }
-
-
-
-
 }
