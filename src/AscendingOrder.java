@@ -39,7 +39,7 @@ public class AscendingOrder {
      * @return Sorted array
      */
     private int[] sort(int[] a) {
-        int temp=0;
+        int temp;
         int n=a.length;
         for(int i=0;i<n;i++) {
             for(int j=0;j<n-i-1;j++) {
@@ -72,7 +72,6 @@ public class AscendingOrder {
     public static void main(String[] args) {
         AscendingOrder ob = new AscendingOrder();
         ob.input();
-        ob.sort(ob.arr);
-        ob.display(ob.arr);
+        ob.display(ob.sort(ob.arr));
     }
 }
