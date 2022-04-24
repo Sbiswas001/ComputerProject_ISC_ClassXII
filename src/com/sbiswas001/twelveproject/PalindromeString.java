@@ -5,6 +5,8 @@ import java.util.Scanner;
 /**
  * This class checks if a string is palindrome or not.
  * A string is palindrome if it is read same from both sides.
+ * @author Sayan Biswas
+ * @version 25.04.2022
  */
 public class PalindromeString {
 
