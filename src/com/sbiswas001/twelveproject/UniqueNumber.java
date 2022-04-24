@@ -28,7 +28,6 @@ public class UniqueNumber {
     private void input() {
         //Variable to store the number
         String s;
-
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number: ");
         if(!sc.hasNextInt()){
