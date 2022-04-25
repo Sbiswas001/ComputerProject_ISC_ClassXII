@@ -68,7 +68,8 @@ public class WordCounter {
         for(int i = 0; i < words.size(); i++) {
             System.out.print(words.get(i) + " ");
         }
-        System.out.print("\nNumber of words in the sentence are : " + count);
+        System.out.print("\nNumber of words in sentence are : "
+                + count);
     }
 
     /**

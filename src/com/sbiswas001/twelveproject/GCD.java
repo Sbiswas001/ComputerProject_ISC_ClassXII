@@ -3,8 +3,8 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class calculates the greatest common divisor
- * of two numbers.
+ * This class calculates the greatest common divisor of two
+ * numbers.
  * @author Sayan Biswas
  * @version 23.04.2022
  */
@@ -61,7 +61,8 @@ public class GCD {
     public static void main(String[] args) {
         GCD ob = new GCD();
         ob.input();
-        System.out.println("GCD is " + ob.setGCD(ob.num1, ob.num2));
+        System.out.println("GCD is " +
+                ob.setGCD(ob.num1, ob.num2));
     }
 
 }

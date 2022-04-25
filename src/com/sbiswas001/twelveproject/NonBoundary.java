@@ -3,9 +3,11 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class enters a matrix from the user, prints the non-boundary elements,
- * sorts them and prints the matrix with sorted non-boundary elements.
- * The non-boundary elements of a matrix are those not at extreme rows and columns.
+ * This class enters a matrix from the user, prints the
+ * non-boundary elements, sorts them and prints the matrix
+ * with sorted non-boundary elements.
+ * The non-boundary elements of a matrix are those not at
+ * extreme rows and columns.
  * @author Sayan Biswas
  * @version 04.04.2022
  */
@@ -41,12 +43,12 @@ public class NonBoundary {
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of rows of the matrix: ");
+        System.out.print("Enter number of rows of matrix: ");
         r = Integer.parseInt(sc.nextLine());
-        System.out.print("Enter the number of columns of the matrix: ");
+        System.out.print("Enter number of columns of matrix: ");
         c = Integer.parseInt(sc.nextLine());
         mat = new int[r][c];
-        System.out.println("Enter the elements of the matrix: ");
+        System.out.println("Enter elements of matrix: ");
         for(int i = 0; i < r; i++) {
             for(int j = 0; j < c; j++) {
                 mat[i][j] = Integer.parseInt(sc.next());
@@ -56,9 +58,10 @@ public class NonBoundary {
 
     /**
      * Stores boundary elements in a one dimensional array,
-     * prints the non-boundary elements, sorts the non-boundary elements,
-     * then replaces the non-boundary elements of the original
-     * two-dimensional array with the sorted non-boundary elements
+     * prints the non-boundary elements, sorts the
+     * non-boundary elements, then replaces the non-boundary
+     * elements of the original two-dimensional array with
+     * the sorted non-boundary elements
      */
     private void compute() {
         //Stores non-boundary elements
@@ -66,7 +69,7 @@ public class NonBoundary {
         int k = 0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
-                //Stores non-boundary elements in a one dimensional array
+                //Stores non-boundary elements in 1-D array
                 nonBound[k] = mat[i][j];
                 k++;
             }
@@ -80,7 +83,7 @@ public class NonBoundary {
         k = 0;
         for(int i = 1; i < r-1; i++) {
             for(int j = 1; j < c-1; j++) {
-                //Replaces the non-boundary elements of the original matrix
+                //Replaces non-boundary elements of original matrix
                 mat[i][j] = x[k];
                 k++;
             }
@@ -141,7 +144,8 @@ public class NonBoundary {
         System.out.println("Entered array is: ");
         ob.displayTwoD(ob.mat);
         ob.compute();
-        System.out.println("The matrix with sorted non-boundary elements is: ");
+        System.out.println("The matrix with sorted " +
+                "non-boundary elements is: ");
         ob.displayTwoD(ob.mat);
     }
 }

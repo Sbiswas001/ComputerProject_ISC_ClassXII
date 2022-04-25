@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- * This class enters a name from user and
- * prints out the initials.
+ * This class enters a name from user and prints out the
+ * initials.
  * @author Sayan Biswas
  * @version 23.04.2022
  */
@@ -47,7 +47,8 @@ public class Initials {
                 initials.add(name.charAt(i+1) + ". ");
             }
         }
-        initials.add(name.substring(name.lastIndexOf(' ')));
+        initials.add(name.substring(
+                name.lastIndexOf(' ')));
     }
 
     /**

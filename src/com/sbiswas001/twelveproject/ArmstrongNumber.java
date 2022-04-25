@@ -4,9 +4,8 @@ import java.util.Scanner;
 
 /**
  * Checks if a number is armstrong or not.
- * A number is armstrong if the sum of each
- * digit to the power number of digits is
- * equal to the number itself.
+ * A number is armstrong if the sum of each digit to the power
+ * number of digits is equal to the number itself.
  * @author Sayan Biswas
  * @version 25.04.2022
  */
@@ -43,16 +42,16 @@ public class ArmstrongNumber {
 
     /**
      * Checks if a number is armstrong or not.
-     * A number is armstrong if the sum of each
-     * digit to the power number of digits is
-     * equal to the number itself.
+     * A number is armstrong if the sum of each digit to the
+     * power number of digits is equal to the number itself.
      * @param a Number to be checked
      * @return true or false
      */
     private boolean armstrongCheck(int a) {
         int sum = 0;
         while(a > 0) {
-            sum += (int)Math.pow(a % 10, numberOfDigits(number));
+            sum += (int)Math.pow(a % 10,
+                    numberOfDigits(number));
             a /= 10;
         }
         return sum == number;

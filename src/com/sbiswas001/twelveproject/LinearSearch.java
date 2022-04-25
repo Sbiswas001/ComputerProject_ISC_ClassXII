@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * This class checks if a term is in an array.
- * If found it displays appropriate message along
- * with index number of the term.
+ * If found it displays appropriate message along with index
+ * number of the term.
  * @author Sayan Biswas
  * @version 20.04.2022
  */
@@ -44,7 +44,7 @@ public class LinearSearch {
         System.out.print("Enter the number of elements: ");
         arrayLength = Integer.parseInt(sc.nextLine());
         arr = new int[arrayLength];
-        System.out.println("Enter the elements of the array: ");
+        System.out.println("Enter the elements of array: ");
         for(int i = 0; i < arrayLength; i++) {
             arr[i] = Integer.parseInt(sc.next());
         }
@@ -76,8 +76,9 @@ public class LinearSearch {
     public static void main(String[] args) {
         LinearSearch ob = new LinearSearch();
         ob.input();
-        System.out.println(ob.array_search(ob.arr, ob.searchTerm) ?
-                "Element is found at index " + ob.searchTermIndex :
-                "Element is not found.");
+        System.out.println(
+                ob.array_search(ob.arr, ob.searchTerm) ?
+                "Element found at index " + ob.searchTermIndex :
+                "Element not found.");
     }
 }

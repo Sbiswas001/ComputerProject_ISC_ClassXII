@@ -3,8 +3,10 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class enters a number from the user and displays if it is palindrome or not.
- * A number is palindrome if it is same when read from both sides.
+ * This class enters a number from the user and displays if
+ * it is palindrome or not.
+ * A number is palindrome if it is same when read from both
+ * sides.
  * @author Sayan Biswas
  * @version 05.04.2022
  */
@@ -64,7 +66,8 @@ public class PalindromeNumber {
      */
     private void display(boolean x) {
 
-        System.out.println(x ? "Number is palindrome." : "Number is not palindrome.");
+        System.out.println(x ? "Number is palindrome." :
+                "Number is not palindrome.");
     }
 
     /**

@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * This class checks if a number is triangular or not.
- * A number is triangular if it is formed by the addition
- * of consecutive sequence of integers starting from 1.
+ * A number is triangular if it is formed by the addition of
+ * consecutive sequence of integers starting from 1.
  * @author Sayan Biswas
  * @version 23.04.2022
  */

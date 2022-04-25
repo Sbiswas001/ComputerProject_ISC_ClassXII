@@ -3,7 +3,8 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class enters multiple strings from user and arranges them in ascending order.
+ * This class enters multiple strings from user and arranges
+ * them in ascending order.
  * @author Sayan Biswas
  * @version 08.04.2022
  */
@@ -28,7 +29,7 @@ public class AlphabeticalSentence {
         System.out.print("Enter number of strings: ");
         //Deals with InputMismatchException
         if(!sc.hasNextInt()){
-            System.out.print("Wrong datatype; enter a number: ");
+            System.out.print("Wrong input! Enter a number: ");
             input();
         }
         int x=Integer.parseInt(sc.next());
@@ -48,7 +49,8 @@ public class AlphabeticalSentence {
         //Bubble sort technique
         for (int i = 0; i < a.length; i++) {
             for (int j = i + 1; j < a.length; j++) {
-                if (a[i].toUpperCase().compareTo(a[j].toUpperCase())>0) {
+                if (a[i].toUpperCase().
+                        compareTo(a[j].toUpperCase())>0) {
                     temp = a[i];
                     a[i] = a[j];
                     a[j] = temp;

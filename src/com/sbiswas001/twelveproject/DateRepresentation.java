@@ -67,10 +67,12 @@ public class DateRepresentation {
         suffix = "";
         oldDate = 0;
         daysAfter = 0;
-        monthNames = new String[]{"JANUARY", "FEBRUARY", "MARCH",
-                "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER",
-                "OCTOBER", "NOVEMBER", "DECEMBER"};
-        monthDays = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        monthNames = new String[]{"JANUARY", "FEBRUARY",
+                "MARCH", "APRIL", "MAY", "JUNE", "JULY",
+                "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER",
+                "DECEMBER"};
+        monthDays = new int[]{31, 28, 31, 30, 31, 30, 31, 31,
+                30, 31, 30, 31};
     }
 
     /**
@@ -83,13 +85,14 @@ public class DateRepresentation {
         System.out.print("Enter year(4 digits): ");
         year = Integer.parseInt(sc.next());
         if (year < 1000 || year > 9999) {
-            System.out.println("Try again! Year must be of 4 digits.");
+            System.out.println("Try again! " +
+                    "Year must be 4 digits.");
             input();
         }
         System.out.print("Enter increment after old date: ");
         increment = Integer.parseInt(sc.next());
         if (increment < 1 || increment > 100) {
-            System.out.println("Try again! Range is 1 to 100.");
+            System.out.println("Try again! Range 1 to 100.");
             input();
         }
     }
@@ -99,7 +102,8 @@ public class DateRepresentation {
      */
     private void oldDateCalculator() {
         //February should have 29 days if it is leap year
-        if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0))
+        if (year % 400 == 0 ||
+                (year % 100 != 0 && year % 4 == 0))
             monthDays[1] = 29;
 
         oldDate = days;
@@ -111,7 +115,8 @@ public class DateRepresentation {
             if (i == 12) {
                 i = 0;
                 year++;
-                if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
+                if (year % 400 == 0 ||
+                        (year % 100 != 0 && year % 4 == 0)) {
                     monthDays[1] = 29;
                 }
             }
@@ -143,7 +148,8 @@ public class DateRepresentation {
             if (i == 12) {
                 i = 0;
                 year++;
-                if (year % 400 == 0 || (year % 100 != 0 && year % 4 == 0)) {
+                if (year % 400 == 0 ||
+                        (year % 100 != 0 && year % 4 == 0)) {
                     monthDays[1] = 29;
                 }
             }
@@ -151,11 +157,14 @@ public class DateRepresentation {
         //Adding suffix as per day
         if (daysAfter % 10 == 1 && daysAfter / 10 != 1) {
             suffix = "ST";
-        } else if (daysAfter % 10 == 2 && daysAfter / 10 != 1) {
+        }
+        else if (daysAfter % 10 == 2 && daysAfter / 10 != 1) {
             suffix = "ND";
-        } else if (daysAfter % 10 == 3 && daysAfter / 10 != 1) {
+        }
+        else if (daysAfter % 10 == 3 && daysAfter / 10 != 1) {
             suffix = "RD";
-        } else {
+        }
+        else {
             suffix = "TH";
         }
     }
@@ -168,10 +177,12 @@ public class DateRepresentation {
         DateRepresentation ob = new DateRepresentation();
         ob.input();
         ob.oldDateCalculator();
-        System.out.println("Old date: " + ob.oldDate + ob.suffix + " " +
-                ob.monthNames[ob.monthIndex] + " " + ob.year);
+        System.out.println("Old date: " + ob.oldDate +
+                ob.suffix + " " + ob.monthNames[ob.monthIndex]
+                + " " + ob.year);
         ob.newDateCalculator();
-        System.out.println("New date: " + ob.daysAfter + ob.suffix + " " +
-                ob.monthNames[ob.monthIndex] + " " + ob.year);
+        System.out.println("New date: " + ob.daysAfter +
+                ob.suffix + " " + ob.monthNames[ob.monthIndex]
+                + " " + ob.year);
     }
 }

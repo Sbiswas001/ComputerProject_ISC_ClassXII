@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 /**
  * This class transposes a matrix.
- * Transpose of a matrix is formed by interchanging
- * the rows and columns of the matrix.
+ * Transpose of a matrix is formed by interchanging the rows
+ * and columns of the matrix.
  * @author Sayan Biswas
  * @version 25.04.2022
  */
@@ -29,15 +29,15 @@ public class Transpose {
     }
 
     /**
-     * Inputs number of rows and columns of a matrix
-     * and the elements of the matrix.
+     * Inputs number of rows and columns of a matrix and the
+     * elements of the matrix.
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter order of the square matrix: ");
+        System.out.print("Enter order of square matrix: ");
         order = Integer.parseInt(sc.nextLine());
         mat = new int[order][order];
-        System.out.println("Enter the elements of the matrix: ");
+        System.out.println("Enter elements of matrix: ");
         for(int i = 0; i < order; i++) {
             for(int j = 0; j < order; j++) {
                 mat[i][j] = Integer.parseInt(sc.next());

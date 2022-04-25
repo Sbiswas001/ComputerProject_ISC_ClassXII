@@ -6,10 +6,10 @@ import java.util.Scanner;
  * This class enters a two-dimensional matrix from the user
  * with number of rows between 2 and 10 and prints it.
  * It then checks if it is symmetric or not.
- * A square matrix is symmetric if element of the ith row
- * and jth column is equal to the element of jth row and ith column.
- * It then prints the sum of the elements of the left diagonal
- * and sum of elements of right diagonal.
+ * A square matrix is symmetric if element of the ith row and
+ * jth column is equal to the element of jth row and ith
+ * column. It then prints the sum of the elements of the left
+ * diagonal and sum of elements of right diagonal.
  * @author Sayan Biswas
  * @version 10.04.2022
  */
@@ -57,16 +57,16 @@ public class Matrix {
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of rows of the matrix: ");
+        System.out.print("Enter number of rows of matrix: ");
         m = Integer.parseInt(sc.nextLine());
         if(m <= 2 || m >= 10) {
-            System.out.print("Enter number of rows between 2 and 10: ");
+            System.out.print("Enter number of rows(2-10): ");
             input();
         }
-        System.out.print("Enter the number of columns of the matrix: ");
+        System.out.print("Enter number of columns of matrix: ");
         n = Integer.parseInt(sc.nextLine());
         mat = new int[m][n];
-        System.out.println("Enter the elements of the matrix: ");
+        System.out.println("Enter the elements of matrix: ");
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
                 mat[i][j] = Integer.parseInt(sc.next());
@@ -77,7 +77,8 @@ public class Matrix {
     /**
      * Checks if a matrix is symmetric.
      * A square matrix is symmetric if element of the ith row
-     * and jth column is equal to the element of jth row and ith column.
+     * and jth column is equal to the element of jth row and
+     * ith column.
      * @param a Matrix to be checked
      * @return true or false
      */
@@ -93,9 +94,9 @@ public class Matrix {
     }
 
     /**
-     * If matrix is a square matrix it prints the sum
-     * of the elements of the left diagonal and sum of
-     * elements of right diagonal.
+     * If matrix is a square matrix it prints the sum of the
+     * elements of the left diagonal and sum of elements of
+     * right diagonal.
      * @param a Matrix to be checked
      */
     private void diagonalSum(int[][] a) {
@@ -103,7 +104,7 @@ public class Matrix {
             for(int i = 0; i < a.length; i++) {
                 //Elements are like a00, a11, a22, ...
                 leftDiagonalSum += a[i][i];
-                //Elements are like a0((n-1)-0), a1((n-1)-1), a2((n-1)-2), ...
+                //Elements are a0((n-1)-0), a1((n-1)-1), ...
                 rightDiagonalSum += a[i][(a.length - 1) - i];
             }
         }
@@ -136,11 +137,15 @@ public class Matrix {
         System.out.println("Entered matrix is: ");
         ob.display(ob.mat);
         System.out.println(ob.symmetricCheck(ob.mat) ?
-                "The matrix is symmetric." : "The matrix is not symmetric.");
+                "The matrix is symmetric." :
+                "The matrix is not symmetric.");
         ob.diagonalSum(ob.mat);
         System.out.println((ob.leftDiagonalSum == -1) ?
-                "The matrix is not a square matrix. Hence, diagonals do not exist." :
-                "The sum of left diagonal elements is " + ob.leftDiagonalSum + ".\n" +
-                "The sum of right diagonal elements is " + ob.rightDiagonalSum + ".");
+                "The matrix is not a square matrix. " +
+                        "Hence, diagonals do not exist." :
+                "The sum of left diagonal elements is " +
+                        ob.leftDiagonalSum + ".\n" +
+                "The sum of right diagonal elements is " +
+                        ob.rightDiagonalSum + ".");
     }
 }

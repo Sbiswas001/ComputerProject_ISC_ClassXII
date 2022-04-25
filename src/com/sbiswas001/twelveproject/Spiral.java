@@ -50,13 +50,13 @@ public class Spiral {
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter the number of rows of the matrix: ");
+        System.out.print("Enter number of rows of matrix: ");
         m = Integer.parseInt(sc.nextLine());
-        System.out.print("Enter the number of columns of the matrix: ");
+        System.out.print("Enter number of columns of matrix: ");
         n = Integer.parseInt(sc.nextLine());
         mat = new int[m][n];
         spiral = new ArrayList<>(m * n);
-        System.out.println("Enter the elements of the matrix: ");
+        System.out.println("Enter elements of matrix: ");
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
                 mat[i][j] = Integer.parseInt(sc.next());
@@ -70,19 +70,19 @@ public class Spiral {
     private void setSpiral() {
         int  startRow = 0, startColumn=0;
         while (startRow < m && startColumn < n) {
-            //Print the first row from the remaining rows
+            //Print first row from remaining rows
             for (int i = startColumn; i < n; ++i) {
                 spiral.add(mat[startRow][i]);
             }
             startRow++;
 
-            // Print the last column from the remaining columns
+            // Print last column from remaining columns
             for (int i = startRow; i < m; ++i) {
                 spiral.add(mat[i][n - 1]);
             }
             n--;
 
-            // Print the last row from the remaining rows
+            // Print last row from remaining rows
             if (startRow < m) {
                 for (int i = n - 1; i >= startColumn; --i) {
                     spiral.add(mat[m - 1][i]);
@@ -90,7 +90,7 @@ public class Spiral {
                 m--;
             }
 
-            // Print the first column from the remaining columns
+            // Print first column from remaining columns
             if (startColumn < n) {
                 for (int i = m - 1; i >= startRow; --i) {
                     spiral.add(mat[i][startColumn]);

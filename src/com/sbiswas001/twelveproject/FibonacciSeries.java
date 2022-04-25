@@ -3,8 +3,9 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class prints n terms of the fibonacci series specified by user.
- * In fibonacci series, next number is the sum of previous two numbers.
+ * This class prints n terms of the fibonacci series.
+ * In fibonacci series, next number is the sum of previous
+ * two numbers.
  * @author Sayan Biswas
  * @version 06.04.2022
  */

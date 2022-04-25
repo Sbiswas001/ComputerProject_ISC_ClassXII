@@ -3,8 +3,10 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class enters a number from the user and displays the mobius function value.
- * The mobius function return 1, -1, 0 based on some conditions.
+ * This class enters a number from the user and displays the
+ * mobius function value.
+ * The mobius function return 1, -1, and 0 based on some
+ * conditions.
  * @author Sayan Biswas
  * @version 06.04.2022
  */
@@ -57,7 +59,6 @@ public class Mobius {
         }
         return (count % 2 != 0) ? -1 : 1;
     }
-
 
     /**
      * Checks if number is prime or not
