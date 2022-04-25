@@ -28,11 +28,11 @@ public class AlphabeticalSentence {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter number of strings: ");
         //Deals with InputMismatchException
-        if(!sc.hasNextInt()){
+        if(!sc.hasNextInt()) {
             System.out.print("Wrong input! Enter a number: ");
             input();
         }
-        int x=Integer.parseInt(sc.next());
+        int x = Integer.parseInt(sc.next());
         s = new String[x];
         System.out.print("Enter the strings: ");
         for (int i = 0; i < x; i++) {
@@ -47,10 +47,10 @@ public class AlphabeticalSentence {
     private void compute(String[] a) {
         String temp;
         //Bubble sort technique
-        for (int i = 0; i < a.length; i++) {
-            for (int j = i + 1; j < a.length; j++) {
-                if (a[i].toUpperCase().
-                        compareTo(a[j].toUpperCase())>0) {
+        for(int i = 0; i < a.length; i++) {
+            for(int j = i + 1; j < a.length; j++) {
+                if(a[i].toUpperCase().
+                        compareTo(a[j].toUpperCase()) > 0) {
                     temp = a[i];
                     a[i] = a[j];
                     a[j] = temp;
@@ -63,9 +63,8 @@ public class AlphabeticalSentence {
      * Displays the sorted strings
      */
     private void display() {
-
-        for(int i=0; i<s.length; i++) {
-            System.out.print(s[i]+" ");
+        for(int i = 0; i < s.length; i++) {
+            System.out.print(s[i] + " ");
         }
     }
 
