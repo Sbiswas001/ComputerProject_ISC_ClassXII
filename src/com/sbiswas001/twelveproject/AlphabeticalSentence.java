@@ -29,7 +29,7 @@ public class AlphabeticalSentence {
         System.out.print("Enter number of strings: ");
         //Deals with InputMismatchException
         if(!sc.hasNextInt()) {
-            System.out.print("Wrong input! Enter a number: ");
+            System.out.print("Wrong input! Enter a number! ");
             input();
         }
         int x = Integer.parseInt(sc.next());
