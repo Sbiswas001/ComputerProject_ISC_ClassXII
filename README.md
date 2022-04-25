@@ -4,6 +4,8 @@ This project contains 20 programs with full documentation for class 12 ISC proje
 All programs were made with OpenJDK JDK 18.0.1 in IntelliJ IDEA in April 2022.
 This project will help you get an idea about the difficulty level of Class XII ISC computer exam 
 and will also guide you onn how to write a program with proper documentation.
+Note: Some features like enhanced for, enhanced switch and text blocks have not been used as they 
+fall out of the syllabus for class XII ISC.
 ## Table of Contents
 * AlphabeticalSentence
 * ArmstrongNumber
