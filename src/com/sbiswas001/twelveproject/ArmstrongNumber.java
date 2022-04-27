@@ -58,7 +58,7 @@ public class ArmstrongNumber {
     }
 
     /**
-     * Displays the result if number is armstrong or not
+     * Displays if number is armstrong or not
      */
     private void display() {
 
