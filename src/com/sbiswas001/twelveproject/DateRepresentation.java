@@ -107,13 +107,11 @@ public class DateRepresentation {
             monthDays[1] = 29;
 
         oldDate = days;
-        int i = 0;
-        while(oldDate > monthDays[i]) {
-            oldDate -= monthDays[i];
-            monthIndex = i + 1;
-            i++;
-            if (i == 12) {
-                i = 0;
+        while(oldDate > monthDays[monthIndex]) {
+            oldDate -= monthDays[monthIndex];
+            monthIndex ++;
+            if (monthIndex == 12) {
+                monthIndex = 0;
                 year++;
                 if (year % 400 == 0 ||
                         (year % 100 != 0 && year % 4 == 0)) {
@@ -140,13 +138,11 @@ public class DateRepresentation {
     private void newDateCalculator() {
         //Calculating date after n days
         daysAfter = oldDate + increment;
-        int i = 0;
-        while(daysAfter > monthDays[i]) {
-            daysAfter -= monthDays[i];
-            monthIndex = i + 1;
-            i++;
-            if (i == 12) {
-                i = 0;
+        while(daysAfter > monthDays[monthIndex]) {
+            daysAfter -= monthDays[monthIndex];
+            monthIndex ++;
+            if (monthIndex == 12) {
+                monthIndex = 0;
                 year++;
                 if (year % 400 == 0 ||
                         (year % 100 != 0 && year % 4 == 0)) {
