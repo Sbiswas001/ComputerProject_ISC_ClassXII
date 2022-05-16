@@ -109,7 +109,7 @@ public class DateRepresentation {
         oldDate = days;
         while(oldDate > monthDays[monthIndex]) {
             oldDate -= monthDays[monthIndex];
-            monthIndex ++;
+            monthIndex++;
             if (monthIndex == 12) {
                 monthIndex = 0;
                 year++;
