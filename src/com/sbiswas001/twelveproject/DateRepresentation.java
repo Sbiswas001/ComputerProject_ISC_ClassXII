@@ -10,7 +10,6 @@ import java.util.Scanner;
  * @version 25.04.2022
  */
 public class DateRepresentation {
-
     /**
      * Stores number of initial days entered by user
      */
