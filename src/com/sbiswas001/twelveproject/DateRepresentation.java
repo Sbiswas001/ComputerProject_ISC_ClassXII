@@ -102,8 +102,9 @@ public class DateRepresentation {
     private void oldDateCalculator() {
         //February should have 29 days if it is leap year
         if (year % 400 == 0 ||
-                (year % 100 != 0 && year % 4 == 0))
+                (year % 100 != 0 && year % 4 == 0)) {
             monthDays[1] = 29;
+        }
 
         oldDate = days;
         while(oldDate > monthDays[monthIndex]) {
