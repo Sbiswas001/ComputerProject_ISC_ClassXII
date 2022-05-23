@@ -153,14 +153,11 @@ public class DateRepresentation {
         //Adding suffix as per day
         if (daysAfter % 10 == 1 && daysAfter / 10 != 1) {
             suffix = "ST";
-        }
-        else if (daysAfter % 10 == 2 && daysAfter / 10 != 1) {
+        } else if (daysAfter % 10 == 2 && daysAfter / 10 != 1) {
             suffix = "ND";
-        }
-        else if (daysAfter % 10 == 3 && daysAfter / 10 != 1) {
+        } else if (daysAfter % 10 == 3 && daysAfter / 10 != 1) {
             suffix = "RD";
-        }
-        else {
+        } else {
             suffix = "TH";
         }
     }
