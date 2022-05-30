@@ -28,7 +28,7 @@ public class FibonacciSeries {
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter a number: ");
+        System.out.print("Enter number of terms: ");
         x=Integer.parseInt(sc.next());
     }
 
