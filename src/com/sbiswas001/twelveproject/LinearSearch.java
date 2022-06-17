@@ -59,7 +59,7 @@ public class LinearSearch {
      * @param x Term to be searched for
      * @return true or false
      */
-    boolean array_search(int[] a, int x) {
+    private boolean array_search(int[] a, int x) {
         for(int i =0; i <a.length; i++) {
             if(x==a[i]) {
                 searchTermIndex = i;
