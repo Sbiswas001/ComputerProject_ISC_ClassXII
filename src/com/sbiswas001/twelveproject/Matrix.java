@@ -3,8 +3,9 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class enters a two-dimensional matrix from the user
- * with number of rows between 2 and 10 and prints it.
+ * This class enters a two-dimensional square matrix from the
+ * user with number of rows and columns between 2 and 10 and
+ * prints it.
  * It then checks if it is symmetric or not.
  * A square matrix is symmetric if element of the ith row and
  * jth column is equal to the element of jth row and ith
@@ -52,19 +53,19 @@ public class Matrix {
     }
 
     /**
-     * Inputs number of rows (between 2 and 10) and
+     * Inputs order of matrix (between 2 and 10) and
      * columns of a matrix and the elements of the matrix.
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number of rows of matrix: ");
+        System.out.print("Enter order of matrix: ");
         m = Integer.parseInt(sc.nextLine());
         if(m <= 2 || m >= 10) {
-            System.out.print("Enter number of rows(2-10): ");
+            System.out.print("Out of range!" +
+                    "Enter order of matrix(2-10): ");
             input();
         }
-        System.out.print("Enter number of columns of matrix: ");
-        n = Integer.parseInt(sc.nextLine());
+        n = m;
         mat = new int[m][n];
         System.out.println("Enter the elements of matrix: ");
         for(int i = 0; i < m; i++) {
@@ -94,22 +95,16 @@ public class Matrix {
     }
 
     /**
-     * If matrix is a square matrix it prints the sum of the
-     * elements of the left diagonal and sum of elements of
-     * right diagonal.
+     * It prints the sum of the elements of the left diagonal
+     * and sum of elements of right diagonal.
      * @param a Matrix to be checked
      */
     private void diagonalSum(int[][] a) {
-        if(m == n) {
-            for(int i = 0; i < a.length; i++) {
+        for(int i = 0; i < a.length; i++) {
                 //Elements are like a00, a11, a22, ...
                 leftDiagonalSum += a[i][i];
                 //Elements are a0((n-1)-0), a1((n-1)-1), ...
                 rightDiagonalSum += a[i][(a.length - 1) - i];
-            }
-        }
-        else {
-            leftDiagonalSum = -1;
         }
     }
 
@@ -140,12 +135,9 @@ public class Matrix {
                 "The matrix is symmetric." :
                 "The matrix is not symmetric.");
         ob.diagonalSum(ob.mat);
-        System.out.println((ob.leftDiagonalSum == -1) ?
-                "The matrix is not a square matrix. " +
-                        "Hence, diagonals do not exist." :
-                "The sum of left diagonal elements is " +
-                        ob.leftDiagonalSum + ".\n" +
+        System.out.println("The sum of left diagonal elements is " +
+                ob.leftDiagonalSum + ".\n" +
                 "The sum of right diagonal elements is " +
-                        ob.rightDiagonalSum + ".");
+                ob.rightDiagonalSum + ".");
     }
 }
