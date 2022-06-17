@@ -19,7 +19,7 @@ public class Matrix {
     /**
      * Stores the matrix
      */
-    private int[][] mat;
+    private int[][] A;
 
     /**
      * Stores number of rows
@@ -45,7 +45,7 @@ public class Matrix {
      * Initializes instance variables
      */
     private Matrix() {
-        mat = null;
+        A = null;
         m = 0;
         n = 0;
         leftDiagonalSum = 0;
@@ -66,11 +66,11 @@ public class Matrix {
             input();
         }
         n = m;
-        mat = new int[m][n];
+        A = new int[m][n];
         System.out.println("Enter the elements of matrix: ");
         for(int i = 0; i < m; i++) {
             for(int j = 0; j < n; j++) {
-                mat[i][j] = Integer.parseInt(sc.next());
+                A[i][j] = Integer.parseInt(sc.next());
             }
         }
     }
@@ -130,11 +130,11 @@ public class Matrix {
         Matrix ob = new Matrix();
         ob.input();
         System.out.println("Entered matrix is: ");
-        ob.display(ob.mat);
-        System.out.println(ob.symmetricCheck(ob.mat) ?
+        ob.display(ob.A);
+        System.out.println(ob.symmetricCheck(ob.A) ?
                 "The matrix is symmetric." :
                 "The matrix is not symmetric.");
-        ob.diagonalSum(ob.mat);
+        ob.diagonalSum(ob.A);
         System.out.println("The sum of left diagonal elements is " +
                 ob.leftDiagonalSum + ".\n" +
                 "The sum of right diagonal elements is " +
