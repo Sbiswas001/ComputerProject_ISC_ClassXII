@@ -3,7 +3,7 @@ package com.sbiswas001.twelveproject;
 import java.util.Scanner;
 
 /**
- * This class enters a two-dimensional square matrix from the
+ * This class takes a two-dimensional square matrix from the
  * user with number of rows and columns between 2 and 10 and
  * prints it.
  * It then checks if it is symmetric or not.
@@ -15,7 +15,6 @@ import java.util.Scanner;
  * @version 10.04.2022
  */
 public class Matrix {
-
     /**
      * Stores the matrix
      */
@@ -95,7 +94,7 @@ public class Matrix {
     }
 
     /**
-     * It prints the sum of the elements of the left diagonal
+     * It calculates the sum of the elements of the left diagonal
      * and sum of elements of right diagonal.
      * @param a Matrix to be checked
      */
