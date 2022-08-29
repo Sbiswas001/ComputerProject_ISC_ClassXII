@@ -92,7 +92,7 @@ public class NonBoundary {
 
     /**
      * Sorts a one-dimensional array
-     * @param a The array to a sorted
+     * @param a The array to be sorted
      * @return The sorted array
      */
     private int[] sort(int[] a) {
