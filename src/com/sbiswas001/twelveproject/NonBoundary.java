@@ -57,7 +57,7 @@ public class NonBoundary {
     }
 
     /**
-     * Stores boundary elements in a one dimensional array,
+     * Stores non-boundary elements in a one dimensional array,
      * prints the non-boundary elements, sorts the
      * non-boundary elements, then replaces the non-boundary
      * elements of the original two-dimensional array with
