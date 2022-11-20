@@ -36,6 +36,7 @@ public class UniqueNumber {
             //Deals with InputMismatchException
             System.out.print("Wrong input! Enter a number: ");
             input();
+            return;
         }
         s = sc.nextLine();
         number = new int[s.length()];
