@@ -33,6 +33,7 @@ public class TriangularNumber {
         if(x < 1) {
             System.out.println("Wrong input! Try again.");
             input();
+            return;
         }
     }
 
