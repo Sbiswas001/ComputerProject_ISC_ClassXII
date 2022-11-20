@@ -87,12 +87,14 @@ public class DateRepresentation {
             System.out.println("Try again! " +
                     "Year must be 4 digits.");
             input();
+            return;
         }
         System.out.print("Enter increment after old date: ");
         increment = Integer.parseInt(sc.next());
         if (increment < 1 || increment > 100) {
             System.out.println("Try again! Range 1 to 100.");
             input();
+            return;
         }
     }
 
