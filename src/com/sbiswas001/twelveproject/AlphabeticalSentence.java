@@ -31,6 +31,7 @@ public class AlphabeticalSentence {
         if(!sc.hasNextInt()) {
             System.out.print("Wrong input! Enter a number! ");
             input();
+            return;
         }
         int x = Integer.parseInt(sc.next());
         s = new String[x];
