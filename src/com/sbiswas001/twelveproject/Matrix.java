@@ -63,6 +63,7 @@ public class Matrix {
             System.out.print("Out of range!" +
                     "Enter order of matrix(2-10): ");
             input();
+            return;
         }
         n = m;
         A = new int[m][n];

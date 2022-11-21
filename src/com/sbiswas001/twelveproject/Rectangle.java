@@ -52,6 +52,7 @@ public class Rectangle {
         if(ch > 3 || ch < 1) {
             System.out.println("Wrong input! Try again.");
             input();
+            return;
         }
     }
 
