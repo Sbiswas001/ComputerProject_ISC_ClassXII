@@ -27,7 +27,7 @@ public class ArmstrongNumber {
      */
     private void input() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Enter number: ");
+        System.out.print("Enter a number: ");
         number = Integer.parseInt(sc.nextLine());
     }
 
